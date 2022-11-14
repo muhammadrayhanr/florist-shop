@@ -1,0 +1,319 @@
+* {
+  
+	box-sizing: border-box;
+  }
+  
+body {
+  margin: 0;
+  }
+  
+a {
+  text-decoration: none;
+  }
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url(Satisfy-Regular.ttf);
+  font-family: 'Dancing Script';
+  src: url(DancingScript-VariableFont_wght.ttf);
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  }
+
+  /* UNTUK HEADER */
+header {
+  height: 130px;
+  width: 100%;
+  line-height: 5px;
+  /* background-color: rgb(236, 244, 234, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 10; */
+  text-align: center;
+  }  
+
+.header-up {
+  color: #de6959;
+  font-family: 'Dancing Script';
+  font-size: 38px;
+  letter-spacing: 5px;
+  }
+
+.header-down {
+  margin-bottom: 10px;
+  }    
+
+.header-down a {
+  line-height: 35px;
+  padding: 0 25px;
+  color: #de6959;
+  display: inline-block;
+  transition: all 0.5s;
+  }  
+
+  .header-down a:hover {
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: rgba(131, 52, 52, 0.3);
+  color: white;
+  }
+
+  /* UNTUK BANNER */
+span {
+  font-size: 36px;
+  }  
+
+.banner {
+  padding: 185px 0 185px 0;
+  background-image: url(assets/banner1.jpg);
+  background-size: cover;
+  color: #ad4637;
+  text-align: center;
+  animation: slide 20s infinite;
+  /* margin: 70px auto; */
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  }  
+
+.banner h1 {
+  opacity: 1;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  }  
+
+@keyframes slide {
+  25% {
+    background-image: url(assets/8.jpg);
+    }
+
+  50% {
+    background-image: url(assets/17.jpg);
+    }
+
+  75% {
+    background-image: url(assets/13.jpg);
+    }
+
+  100% {
+    background-image: url(assets/1.jpg);
+    }
+  }  
+
+  /* UNTUK CONTENT */
+.item-contents {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}  
+
+.contents-title {
+  font-size: 20px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+}  
+
+.container-content {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}  
+
+.container-content .card {
+  background-color: white;
+  position: relative;
+  max-width: 450px;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+}  
+
+.container-content .card .imgBx {
+  max-width: 200px;
+  flex: 0 0 200px;
+}  
+
+.container-content .card .imgBx img {
+  max-width: 100%;
+}  
+
+.container-content .card .content {
+  margin-left: 20px;
+}
+
+.imgBx {
+  overflow: hidden;
+}
+
+.imgBx img {
+  transition: transform 0.5s ease;
+  object-fit: contain;
+}
+
+.imgBx:hover img {
+  transform: scale(1.5);
+}
+
+/* UNTUK QUOTE */
+.quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 15px;
+  margin: 50px 0;
+  text-align: center;
+  padding-top: 20px 25px;
+  border-top: 2px solid #dee7ec;
+  border-bottom: 2px solid #dee7ec;
+}  
+
+/* UNTUK SIGN UP FORM */
+.signup-form {
+  background-image: url(assets/8.jpg);
+  background-size: cover;
+  background-position: 25%;
+  text-align: center;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+/* .signup-form h3, p {
+  color: #b02613;
+} */
+
+.shop img {
+  width: 25px;
+}
+
+.shop span {
+  margin-right: 5px;
+}
+
+.shop a {
+  color: black;
+}
+
+input {
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color:#dee7ec;
+  color: #889eab;
+  cursor: pointer;
+  box-shadow: 0 7px #bac2c7;
+}
+
+.contact-submit:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* UNTUK SIGN UP FORM */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: rgb(236, 244, 234, 0.5);
+  padding: 40px 0;
+}
+
+.footer-logo {
+	width: 25%;
+  padding: 0 15px;
+	color: #de6959;
+	font-size: 36px;
+	margin-bottom: 38px;
+  font-family: 'Dancing Script';
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #de6959;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+  padding: 0 40px;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:40px;
+	bottom: -10px;
+	background-color: #de6959;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+  padding: 0 40px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #dda280;
+	display: block;
+	transition: all 0.3s ease;
+  padding: 0;
+}
+
+.footer-col ul li a:hover{
+	color: #d6b9a4;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+

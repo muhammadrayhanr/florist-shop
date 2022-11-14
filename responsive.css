@@ -1,0 +1,36 @@
+@media (max-width: 1000px) {
+    .container-content {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 670px) {
+    .container-content {
+      flex-direction: column;
+    }
+
+    .container-content .card {
+      flex-direction: column;
+      max-width: 350px;
+    }
+
+    .container-content .card .imgBx {
+      max-width: 100%;
+    }
+
+    .container-content .card .content {
+      margin-left: 0px;
+    }
+  }  
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
